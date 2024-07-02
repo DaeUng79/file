@@ -93,4 +93,10 @@ else:
                 """, unsafe_allow_html=True)
  
         st.success("**부서에서 취합한 여러 개의 엑셀 파일을 한번에 등록 취합하고, 미제출 부서 확인과 정리된 엑셀 파일을 다운로드 할 수 있습니다.**")
+        # 동영상 삽입
+        video_file = open('file.mp4', 'rb')
+        video_bytes = video_file.read()
+
+        st.video(video_bytes)
+
         
